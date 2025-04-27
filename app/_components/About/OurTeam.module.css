@@ -1,0 +1,245 @@
+.direction{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: center;
+	border: 11px solid var(--base-bg);
+	border-left:0px;
+	border-left-color: #ffffff;
+	background-color: #ffffff;
+	padding:18px;
+}
+.direction:before, .direction:after {
+	content: "";
+	display: block;
+	background-color: #ffffff;
+	position: absolute;
+	z-index: 1;
+	-webkit-transform: skew(-26deg);
+	transform: skew(-26deg);
+	height: 30px;
+}
+.direction:before{
+	width: 50px;
+	top: -11px;
+	left: -21px;
+}
+.direction:after{
+	width: 170px;
+	bottom: -11px;
+	left: -21px;
+}
+.direction > * {
+	position: relative;
+	z-index: 3;
+}
+@media (min-width: 1025px) {
+	.direction:hover .direction__social{
+		opacity: 1;
+		left: 0px;
+	}
+}
+.direction__img{
+	border-radius: 50%;
+	overflow: hidden;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+@media (min-width: 401px) {
+	.direction__img + .direction__content{
+		margin-left: 27px;
+	}
+}
+@media (min-width: 1230px) {
+	.direction__img{
+		width: 195px;
+		min-width: 195px;
+		height: 195px;
+	}
+}
+@media (max-width: 1229.98px) {
+	.direction__img{
+		width: 150px;
+		min-width: 150px;
+		height: 150px;
+	}
+}
+@media (max-width: 1024.98px) {
+	.direction__img{
+		width: 120px;
+		min-width: 120px;
+		height: 120px;
+	}
+}
+.direction__social{
+	position: absolute;
+	z-index: 4;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	transition: all 0.2s linear;
+}
+@media (min-width: 1025px) {
+	.direction__social{
+		opacity: 0;
+		left: -20px;
+	}
+}
+.direction__social > * {
+	display: block;
+	width: 43px;
+	height: 43px;
+	background-color: var( --base-color);
+	border: 2px solid var( --base-color);
+	border-radius: 50%;
+	font-size: 13px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: center;
+	color: #ffffff;
+	transition: all 0.2s linear;
+}
+.direction__social > *:not(:first-child) {
+	margin-top: 7px;
+}
+.direction__social > *:hover {
+	background-color: #ffffff;
+	color: var( --base-color);
+}
+@media (max-width: 1024.98px) {
+	.direction__social > * {
+		width: 35px;
+		height: 35px;
+	}
+}
+@screen md {
+	.direction__text {
+		margin-top: 21px;
+	}
+}
+@screen md-max {
+	.direction__text {
+		margin-top: 14px;
+	}
+}
+.direction__subtitle{
+	font-size: 13px;
+	line-height: 1.2;
+}
+@media (max-width: 400px) {
+	.direction{
+		flex-wrap: wrap;
+	}
+	.direction__social{
+		top: 80px;
+	}
+	.direction__content{
+		margin-top: 20px;
+	}
+}
+/*
+	Personal
+*/
+/* img */
+.personal__img img{
+	border-radius: 50%;
+}
+.personal__img:before {
+	z-index: 1;
+	display: block;
+	content: "";
+	width: 0;
+	height: 0;
+	background: rgba(255, 255, 255, 0.2);
+	opacity: 0;
+	pointer-events: none;
+	border-radius: 50%;
+}
+.personal:hover .personal__img:before {
+	-webkit-animation: circle 1.15s ease;
+	animation: circle 1.15s ease;
+	opacity: 1;
+}
+/* title */
+.personal__title {
+	font-family: var(--base-font2);
+	color: var( --base-color);
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 26px;
+	margin-top: 14px;
+	position: relative;
+	display: inline-block;
+}
+.personal__title:before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	width: 0%;
+	height: 2px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	background-color: currentColor;
+	transition: width 0.2s linear;
+}
+.personal:hover .personal__title:before {
+	width: 100%;
+}
+.personal__subtitle{
+	font-size: 13px;
+	line-height: 1.2;
+	margin-top: 8px;
+	color: var(--base-text-color);
+}
+@media (max-width: 1024.98px) {
+	.personal__img{
+		width: 160px;
+	}
+}
+@media (max-width: 767.98px) {
+	.personal__img{
+	  width: 120px;
+	}
+	.personal__title{
+	  font-size: 17px;
+	  line-height: 27px;
+	  margin-top: 10px;
+	}
+	.personal__subtitle{
+	  margin-top: 5px;
+	}
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}

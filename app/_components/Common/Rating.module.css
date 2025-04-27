@@ -1,0 +1,6 @@
+.form__rating span{
+    color: var(--base-color3);
+    cursor: pointer;
+    transition: color 0.2s;
+    @apply lg:text-[17px] md:mr-[6px] md-max:mr-[4px] only-lg:text-[16px] md-max:text-[13px];
+}

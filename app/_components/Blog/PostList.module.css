@@ -1,0 +1,240 @@
+/*
+    Post List
+*/
+@screen lg {
+    .post + .post{
+        margin-top:50px;
+    }
+}
+@screen only-lg {
+    .post + .post{
+        margin-top:40px;
+    }
+}
+@screen only-md {
+    .post + .post{
+        margin-top:40px;
+    }
+}
+@screen sm-max {
+    .post + .post{
+        margin-top:30px;
+    }
+}
+/*
+    Post Item
+*/
+.post:before {
+    content: "";
+    pointer-events: none;
+    border: 2px solid var(--base-bg);
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height:calc(100% - 20px);
+}
+.post__imgholder{
+    background-color: #ffffff;
+}
+.post__img:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -16%;
+    width: 84.5%;
+    height: 100%;
+    background-color: var(--base-color-dark);
+    -webkit-transform: skew(26deg);
+    transform: skew(26deg);
+}
+.btn__round_icon{
+    left:calc(50% - 10px);
+}
+@screen xl {
+    .post__layout{
+        padding: 38px 56px 50px;
+    }
+}
+@screen only-xl{
+    .post__layout{
+        padding: 38px 46px 50px;
+    }
+}
+@media (min-width: 1025px){
+    .post__img{
+        padding: 20px 20px 20px 0;
+    }
+}
+@screen lg-max{
+    .post__img{
+        padding: 10px 10px 10px 0;
+    }
+}
+@screen only-lg{
+    .post__layout{
+        padding: 30px 20px 42px;
+    }
+}
+@screen only-md{
+    .post__layout{
+        padding: 30px 20px 42px;
+    }
+}
+@screen sm-max{
+    .post__layout{
+        padding: 10px 20px 32px;
+    }
+}
+.post__data{
+    font-size: 13px;
+    margin-top: 2px;
+}
+@screen lg{
+    .post__data{
+        padding-left: 56px;
+    }
+}
+@screen lg-max{
+    .post__data{
+        padding-left: 20px;
+        margin-top: 5px;
+    }
+}
+.post__data > *{
+    margin-right: 19px;
+}
+.post__data_icon{
+    display: inline-block;
+    margin-right: 8px;
+    color: var(--base-color);
+}
+.post__data:nth-child(1){
+    min-height: 78px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2px;
+    margin-bottom: 9px;
+}
+.post__data_bg {
+    top: 0;
+    right: -15%;
+    height: 100%;
+    background: var(--base-color);
+    -webkit-transform: skew(26deg);
+    transform: skew(26deg);
+}
+@screen lg {
+    .post__data_bg {
+        width: 67.8%;
+    }
+}
+@screen lg-max{
+    .post__data_bg {
+        width: 49%;
+    }
+    .post__data img{
+        object-position: right bottom;
+    }
+}
+.post__title{
+    font-family: var(--base-font2);
+    color: var(--base-color);
+    font-weight: 800;
+    padding: 0 0 20px 0;
+    transition: color 0.2s linear;
+}
+@media (hover: hover) {
+    .post__title:hover{
+        color: var(--base-color2);
+    }
+}
+@screen xl{
+    .post__title{
+        font-size: 42px;
+        line-height: 55px;
+    }
+}
+@screen only-xl{
+    .post__title{
+        font-size: 34px;
+        line-height: 47px;
+    }
+}
+@screen only-lg{
+    .post__title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+@screen only-md{
+    .post__title{
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+@screen sm-max{
+    .post__title{
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+.post__btnmore{
+    margin-top: 28px;
+}
+.blockquote{
+    background-color: var(--base-bg);
+    padding-bottom: 44px;
+}
+.blockquote:before{
+    font-family: var(--font-icons);
+    content: "\e926";
+    position: absolute;
+    right: 31px;
+    bottom: 0%;
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    color: var(--base-color);
+}
+@screen lg{
+    .blockquote:before{
+        font-size: 83px;
+    }
+}
+@screen lg-max{
+    .blockquote:before{
+        font-size: 65px;
+    }
+}
+@screen sm-max{
+    .blockquote:before{
+        font-size: 55px;
+    }
+}
+.blockquote__top{
+    margin-top: 24px;
+}
+@screen lg{
+    .blockquote__inner{
+        padding: 36px 44px 0;
+    }
+}
+@screen lg-max{
+    .blockquote__inner{
+        padding: 25px 25px 0;
+    }
+}
+.blockquote__inner:before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--base-color);
+}
+.sound_player{margin-top: 24px;}

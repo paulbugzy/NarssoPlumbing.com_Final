@@ -1,0 +1,74 @@
+/* img_bg */
+.img_bg{
+	top:0;
+	left:-170px;
+}
+/* location */
+.location__list li {
+  position: relative;
+}
+.location__list li a {
+  display: inline-block;
+  padding: 0 0 0 28px;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--base-text-color);
+}
+.location__list li a:before {
+  content: "\e902";
+  font-family: var(--font-icons);
+  position: absolute;
+  top: -1px;
+  left: 0;
+  color: var(--base-color3);
+  font-size: 18px;
+}
+.location__list li a span {
+  display: block;
+  position: relative;
+  color: var(--base-color);
+  font-family: var(--base-font);
+  font-weight: 700;
+  @apply lg:inline-block;
+}
+.location__list li a span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.2s linear;
+}
+.location__list li a:hover span:before {
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .location__list li:not(:first-child) {
+    margin-top: 22px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .location__list li:not(:first-child) {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .location__list li:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+.location__text{
+	@apply md-max:mt-[16px];
+}
+@media (max-width:420px) {
+	.responsive__list{
+		overflow-y: hidden;
+		overflow-x: scroll;
+	}
+	.responsive__list ul{
+		min-width: 200px;
+	}
+}

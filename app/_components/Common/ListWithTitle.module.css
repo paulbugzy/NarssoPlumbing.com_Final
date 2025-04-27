@@ -1,0 +1,14 @@
+.paragraph__item:before {
+    content: "\e92c";
+    font-family: var(--font-icons);
+    display: inline-block;
+    font-size: 13px;
+    position: absolute;
+    left: 0;
+    font-weight: 400;
+    color: var(--base-color);
+    @apply md:text-[13px] md-max:text-[10px];
+}
+.paragraph__item{	
+    @apply md:pl-[29px] md-max:pl-[22px];
+}

@@ -1,0 +1,6 @@
+.aside__wrapper > *:not(:first-child){	
+    @apply lg-max:mt-[30px] lg:mt-[45px] xl:mt-[60px];
+}
+.indent__top2{    
+    @apply xl:mt-[43px] xl-max:mt-[35px] md-max:mt-[25px] sm-max:mt-[20px];
+}

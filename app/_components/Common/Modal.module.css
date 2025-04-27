@@ -1,0 +1,191 @@
+/*
+	Modal Wrapper
+*/
+.modal__wrapper{
+    outline: 0;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+	@apply md:p-[30px] md-max:p-[20px];
+}
+.modal__overlay{
+	background-color: rgba(var(--base-color2-rgba), 0.5);
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
+	opacity: 0;
+}
+.modal__body{
+	opacity: 0;
+	transition: all 0.5s ease 0s;
+	-webkit-transform: perspective(600px) translate(0px, -100%) rotateX(25deg);
+	transform: perspective(600px) translate(0px, -100%) rotateX(25deg);
+}
+.fixed-height.modal__scroll{
+	height: calc(100vh - 110px);
+}
+.modal__open{
+	visibility: visible;
+	z-index: 50;
+}
+.modal__open  .modal__overlay{
+  opacity: 1;
+}
+/*
+	Modal Btn Close
+*/
+.modal__close{
+	cursor: pointer;
+	top: 0;
+	right: 0;
+	color: #ffffff;
+	background-color: var(--base-color2);
+}
+.modal__close > * {
+	pointer-events: none;
+}
+.modal__close:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 34px;
+	margin-top: -1px;
+	transition: all 0.3s ease-in;
+}
+.modal__close label {
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+	color: #ffffff;
+	font-size: 20px;
+	opacity: 0;
+	font-family: var(--base-font2);
+	font-weight: 800;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+@screen lg{
+	.modal__close {
+		width: 100px;
+		height: 100px;
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+	.modal__close:hover label {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+	.modal__close:hover:before {
+		opacity: 0;
+	}
+}
+@screen lg-max{
+	.modal__close {
+		width: 70px;
+		height: 70px;
+	}
+	.modal__close:before {
+		font-size: 25px;
+	}
+	.modal__close label {
+		display: none;
+	}
+}
+@screen sm-max{
+	.modal__close {
+		width: 59px;
+		height: 59px;
+	}
+}
+/*
+	Modal Size
+*/
+@screen xl{
+	.modal__sizeXl {
+		max-width: 950px;
+	}
+}
+@screen xl-max{
+	.modal__sizeXl {
+		max-width: 722px;
+	}
+}
+.modal__sizeLg {
+	max-width: 722px;
+}
+.modal__sizeFullWidth {
+	max-width: 100%;
+	width: 100%;
+}
+/*
+	Modal Title
+*/
+.modal__title {
+	font-family: var(--base-font2);
+	color: var(--base-color);
+	font-weight: 800;
+ }
+.modal__title + * {
+	margin-top: 0;
+}
+.modal__title + p {
+	max-width: calc(100% - 100px);
+}
+@screen md{
+	.modal__title{
+		font-size: 29px;
+		line-height: 39px;
+		padding: 0 35px 12px 0;
+	}
+}
+@screen md-max{
+	.modal__title{
+		font-size: 19px;
+		line-height: 29px;
+		padding: 0 51px 6px 0;
+	}
+}
+/*
+	Modal Type 1 (Default)
+*/
+.modal__type1{
+	padding: 20px;
+}
+.modal__layout{
+	max-height:calc(100svh - 40px);
+	overflow: hidden;
+	background-color: #ffffff;
+}
+@screen md{
+	.modal__layout{
+		padding: 50px;
+	}
+}
+@screen only-md{
+	.modal__layout {
+    	padding: 30px;
+	}
+}
+@screen sm-max{
+	.modal__layout {
+    	padding: 30px 20px;
+	}
+}
+/*
+	Modal Type 2 (Video)
+*/
+@screen md{
+	.modal__type2 .modal__layout{
+		padding: 30px;
+	}
+}
+@screen md-max{
+	.modal__type2 .modal__layout{
+		padding: 15px;
+	}
+}
+.modal__noinner .modal__layout{
+	padding: 0 !important;
+}

@@ -1,0 +1,39 @@
+.list__email li{
+	position: relative;
+	padding: 0 0 0 38px;
+}
+.list__email i{
+	font-size: 20px;
+	position: absolute;
+	top: 4px;
+	left: 0;
+	color: var(--base-color);
+}
+.list__email strong{
+	display: block;
+	width: 100%;
+	color: var(--base-color);
+	margin-bottom: -3px;
+}
+.list__email li:not(:first-child) {
+	margin-top: 11px;
+}
+.list__email a{
+	color: var(--base-text-color);
+	display: inline-block;
+	position: relative;
+}
+.list__email a:before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 4px;
+	width: 0%;
+	height: 1px;
+	left: 0;
+	background-color: currentColor;
+	transition: width 0.2s linear;
+}
+.list__email a:hover:before {
+	width: 100%;
+}

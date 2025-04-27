@@ -1,0 +1,144 @@
+.logo__wrapper{
+	background-color: var(--base-color-dark);
+}
+.logo{
+	max-width: 147px;
+	top: -34px;
+	left: 54px;
+	border: none;
+	color: #ffffff;
+}
+.logo__icon{
+	width: 67px;
+}
+.logo__icon > * {
+	width: 100%;
+	height: auto;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.logo__icon > * {
+	  height: 67px;
+	}
+}
+.logo__text{
+	line-height: 1;
+	font-family: var(--base-font3);
+	font-weight: 900;
+	margin-top: 3px;
+}
+.wave_container{
+	width: calc(100% - 2px);
+	left: 2px;
+	bottom: 5px;
+	line-height: 0;
+}
+.wave_container svg{
+	transition: all 0.2s ease-in-out;
+}
+.wave_container svg path{
+	fill: var(--base-color2);
+	opacity: 0.7;
+}
+@media (min-width: 1561px){
+	.logo__wrapper{
+		min-width: 293px;
+	}
+	.logo__text{
+		font-size: 36px;
+	}
+}
+@media (max-width: 1560px){
+	.logo__wrapper{
+		min-width: 250px;
+	}
+	.logo{
+		left: 40px;
+	}
+	.logo__text{
+		font-size: 33px;
+	}
+}
+@media (max-width: 1100px) and (min-width: 768px){
+	.logo__wrapper{
+		min-width: 195px;
+	}
+	.logo{
+		top: -28px;
+		left: 24px;
+	}
+	.logo__text{
+		font-size: 27px;
+	}
+	.logo__icon{
+		width: 52px;
+	}
+}
+@media (max-width: 1100px){
+	.row-header-layout:not(.sticky-header) .wave_container {
+		top: 4px;
+		height: 19px;
+	}
+	.wave_container{
+		bottom: 4px;
+	}
+}
+@media (max-width:767px){
+	.logo__wrapper{
+		min-width: 135px;
+	}
+	.logo{
+		top: -3px;
+		left: 18px;
+	}
+	.logo__text{
+		font-size: 18px;
+		margin-top: 2px;
+	}
+	.logo__icon{
+		width: 33px;
+	}
+	.wave_container{
+		bottom: 3px;
+	}
+}
+/*
+	logo__drop
+*/
+.logo__drop {
+	-webkit-animation: drop 7s infinite;
+	animation: drop 7s infinite;
+}
+@-webkit-keyframes drop {
+	0% {
+	  -webkit-transform: translateY();
+	  transform: translateY();
+	  opacity: 1;
+	}
+	70% {
+	  -webkit-transform: translateY(0);
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+	100% {
+	  -webkit-transform: translateY(110vh);
+	  transform: translateY(110vh);
+	  opacity: 0.5;
+	}
+}
+@keyframes drop{
+	0% {
+	  -webkit-transform: translateY();
+	  transform: translateY();
+	  opacity: 1;
+	}
+	70% {
+	  -webkit-transform: translateY(0);
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+	100% {
+	  -webkit-transform: translateY(110vh);
+	  transform: translateY(110vh);
+	  opacity: 0.5;
+	}
+}

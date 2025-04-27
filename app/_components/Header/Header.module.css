@@ -1,0 +1,127 @@
+.header__wrapper{
+	background-color: var(--base-color-dark);
+    box-shadow: 0 20px 30px rgb(26 54 85 / 10%);
+}
+@media (min-width: 1101px){
+	.header__wrapper{
+		min-height: 155px;
+	}
+}
+@media (max-width: 1100px) and (min-width: 768px){
+	.header__wrapper{
+		min-height: 112px;
+	}
+}
+@screen md-max{
+	.header__wrapper{
+		min-height: 59px;
+	}
+}
+/*
+	Top Row Info
+*/
+.hinfo__wrapper{
+	grid-template-columns: auto min-content;
+	grid-column-gap: 0;
+	align-items: center;
+	padding-left: 301px;
+    padding-right: 33px;
+	color: #ffffff;
+}
+@media (max-width: 1560px){
+	.hinfo__wrapper{
+		padding-left: 250px;
+	}
+}
+@media (min-width: 1101px){
+	.hinfo__wrapper{
+		height: 55px;
+	}
+}
+@media (max-width: 1100px){
+	.hinfo__wrapper{
+		height: 42px;
+	}
+	.hinfo__wrapper{
+		padding-left: 195px;
+	}
+}
+@screen md-max {
+	.hinfo__wrapper{
+		height: 10px;
+		overflow: hidden;
+	}
+	.hinfo__wrapper > *{
+		opacity: 0;
+		visibility: hidden;
+		pointer-events:none;
+	}
+}
+/*
+	Headr Layout
+*/
+.hlayout{
+	grid-template-columns: min-content auto min-content;
+	grid-column-gap: 0;
+	background-color:#fff;
+}
+.hlayout__col{
+	background-color: #ffffff;
+}
+@media (min-width: 1101px){
+	.hlayout__col{
+		min-height: 100px;
+	}
+}
+@media (max-width: 1100px){
+	.hlayout__col{
+		min-height: 70px;
+	}
+}
+@screen md-max{
+	.hlayout__col{
+		min-height: 59px;
+	}
+}
+.hlayout__bg{
+	background-color: #ffffff;
+}
+.hlayout__corner:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid #ffffff;
+	border-left: 48px solid transparent;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+@media (min-width: 1561px){
+	.hlayout__objects > *:not(:first-child){
+		margin-left: 60px;
+	}
+}
+@media (max-width: 1560px){
+	.hlayout__objects > *:not(:first-child){
+		margin-left: 30px;
+	}
+}
+@media (max-width: 1100px){
+	.hlayout__corner:before{
+		border-bottom-width: 70px;
+		border-left-width: 35px;
+	}
+}
+@screen md-max{
+	.hlayout__corner:before{
+		border-bottom-width: 59px;
+	}
+}
+@media (max-width: 420px){
+	.hlayout__objects > *:not(:first-child){
+		margin-left: 20px;
+	}
+}

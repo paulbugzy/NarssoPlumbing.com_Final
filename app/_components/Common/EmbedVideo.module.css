@@ -1,0 +1,33 @@
+/*
+    Video Icon
+*/
+.video__icon{    
+    transition: background-color .2s linear, opacity .3s linear;    
+    color: red;
+}
+.video__icon svg{
+    position: relative;
+    z-index: 1;
+}
+.video__iconCustom:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    z-index: 0;
+}
+@screen sm{
+    .btnSize_md{
+        font-size: 80px;
+    }
+}
+@screen sm-max {
+    .btnSize_md{
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,9 @@
+.signature__indent{
+	@apply lg:mt-[30px] lg-max:mt-[16px];	
+}
+/*
+	boxlayout
+*/
+.custom__col + .custom__col{
+	@apply lg:mt-[30px] lg-max:mt-[20px];
+}

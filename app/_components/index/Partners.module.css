@@ -1,0 +1,6 @@
+.partners__wrapper{
+	@apply md:grid md:grid-cols-2 gap-[30px];	
+}
+.partners__content{
+	@apply md-max:mt-[40px] sm-max:mt-[35px]
+}

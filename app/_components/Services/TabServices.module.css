@@ -1,0 +1,18 @@
+.signature__indent{
+	@apply lg:mt-[30px] lg-max:mt-[16px];
+}
+@screen md {
+	.btn__top{margin-top: 35px;}
+}
+@screen md-max {
+	.btn__top{margin-top: 19px;}
+}
+/*
+	boxlayout
+*/
+.custom__col{
+	@apply lg:px-[15px];
+}
+.custom__col + .custom__col{
+	@apply lg:mt-[30px] lg-max:mt-[20px];
+}

@@ -1,0 +1,8 @@
+.footerLayout {
+	background-color: var(--base-color-dark);
+	color: #ffffff;
+	background-position: center bottom;
+	padding-bottom: 44px;
+	@apply lg-max:pb-[21px] sm-max:pb-[32px] 690-min:bg-center;
+
+}

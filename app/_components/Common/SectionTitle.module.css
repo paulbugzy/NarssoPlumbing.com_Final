@@ -1,0 +1,134 @@
+/*
+	Subtitle
+*/
+.blocktitle__subtitle{
+	font-size: 16px;
+	font-weight: 800;
+	font-family: var(--base-font2);
+	color: var(--base-color2);
+	letter-spacing: 0.09em;
+}
+.blocktitle__subtitle:before {
+	content: "";
+	display: inline-block;
+	background-color: var(--base-color2);
+	width: 50px;
+	height: 2px;
+	margin-right: 20px;
+	position: relative;
+	top: -3px;
+}
+/*
+	Title
+*/
+.blocktitle__title {
+	font-family: var(--base-font2);
+	color: var(--base-color);
+	font-size: 42px;
+	line-height: 55px;
+	margin-top: 12px;
+	font-weight: 800;
+}
+@screen sm-max {
+	.blocktitle__title {
+		white-space: pre-line;
+	}
+}
+/*
+	Text Under
+*/
+.blocktitle__textunder{
+	font-size: 200px;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+	font-family: var(--base-font2);
+	font-weight: 800;
+	z-index: 0;
+	top: -66px;
+}
+.blocktitle__textunder:not([class^=tt-color]) {
+	color: var(--base-bg);
+}
+@media (min-width: 1601px){
+	.blocktitle.text-left .blocktitle__textunder{
+		margin-left: -203px;
+	}
+}
+/*
+	Text
+*/
+.blocktitle__text{
+	@apply lg:mt-[37px] lg:mb-[9px];
+	@apply lg-max:mt-[17px] lg-max:mb-[12px];
+	max-height:99999px;
+}
+@media (max-width: 1431px){
+	.blocktitle__textunder {
+		font-size: 170px;
+		top: -60px;
+	}
+	.blocktitle__subtitle {
+		font-size: 15px;
+	}
+	.blocktitle__title {
+		font-size: 36px;
+		line-height: 49px;
+	}
+}
+@screen lg-max {
+	.blocktitle__textunder {
+		font-size: 150px;
+		line-height: 1.1;
+		top: -52px;
+	}
+	.blocktitle__subtitle {
+		font-size: 14px;
+		line-height: 27px;
+	}
+	.blocktitle__title {
+		font-size: 32px;
+		line-height: 42px;
+		margin-top: 12px;
+	}
+}
+@screen md-max {
+	.blocktitle{
+		text-align: left;
+	}
+	.blocktitle__textunder {
+		font-size: 100px;
+		top: -40px;
+	}
+	.blocktitle__subtitle {
+		font-size: 13px;
+	}
+	.blocktitle__title {
+		font-size: 29px;
+		line-height: 36px;
+		margin-top: 8px;
+	}
+}
+@screen sm-max {
+	.blocktitle__textunder {
+		top: -37px;
+		left:-4px;
+	}
+}
+
+@media (max-width: 1431px){
+	.blocktitle__subtitle:before {
+		width: 45px;
+	}
+}
+@screen only-lg {
+	.blocktitle__subtitle:before {
+		width: 40px;
+	}
+}
+@screen md-max {
+	.blocktitle__subtitle:before {
+		width: 25px;
+		height: 1px;
+		margin-right: 11px;
+	}
+}

@@ -1,0 +1,38 @@
+export const newsCaruselData = [
+	{
+		id: 1,
+		srcimg: '/images/news/news-img01.jpg',
+		dataMonth: `Nov`,
+		dataNumber: `18`,
+		srclink:`/blog`,
+		title: `The Most Common Types of Sewer Line Pipe`,
+		text: `Repairing or replacing a sewer line on your property is one of the...`,
+	},
+	{
+		id: 2,
+		srcimg: '/images/news/news-img02.jpg',
+		dataMonth: `Nov`,
+		dataNumber: `22`,
+		srclink:`/blog`,
+		title: `Why Copper is the Best Plumbing Material`,
+		text: `Driven by competition and the desire to cut costs, they put people...`,
+	},
+	{
+		id: 3,
+		srcimg: '/images/news/news-img03.jpg',
+		dataMonth: `Nov`,
+		dataNumber: `15`,
+		srclink:`/blog`,
+		title: `How Does Pipe Leak Tape`,
+		text: `A clogged sewer line is one of the most common, frustrating, an  they put people...`,
+	},
+	{
+		id: 4,
+		srcimg: '/images/news/news-img04.jpg',
+		dataMonth: `Nov`,
+		dataNumber: `17`,
+		srclink:`/blog`,
+		title: `How to Clean Hair Out of a Drain`,
+		text: `Once you find the location of the broken pipe, one way to fix...`,
+	},
+];

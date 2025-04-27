@@ -1,0 +1,154 @@
+/*
+	Dropdown Toggle Bar
+*/
+.toggleBar__dropdown{
+	height: 100svh;
+	background-color: #ffffff;
+	position: fixed;
+	z-index: 22;
+	opacity: 0;
+	min-width: 263px;
+	transition: transform 0.35s ease-in-out;
+}
+.toggleBar__open .toggleBar__dropdown{
+	visibility: visible;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+	opacity: 1;
+}
+@media (min-width: 1101px){
+	.toggleBar__dropdown{
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		top: 0;
+		right: 0;
+		padding: 45px 56px 45px;
+		width: 445px;
+	}
+}
+@media (max-width: 1100px){
+	.toggleBar__dropdown{
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+		left: 0;
+		padding: 40px 20px 150px 12px;
+		max-width: 316px;
+	}
+}
+.toggleBar__dropdownBg{
+	background-color: rgba(var(--base-color2-rgba), 0.5);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    display: block;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.toggleBar__dropdownBg_open{
+	opacity: 1;
+    pointer-events: auto;
+    z-index: 21;
+    visibility: visible;
+    transition: opacity .4s linear;
+}
+/*
+	Button Toggle Bar
+*/
+.toggleBar__btn{
+    background-color: var(--base-color2);
+    color: #ffffff;
+}
+.toggleBar__btnicon{
+	width: 36px;
+	height: 2px;
+	background-color: #ffffff;
+}
+.toggleBar__btnicon:before,
+.toggleBar__btnicon:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	height: 2px;
+	background-color: currentColor;
+	transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+  }
+  .toggleBar__btnicon:before {
+	top: -11px;
+	width: 23px;
+  }
+  .toggleBar__btnicon:after {
+	top: 11px;
+	width: 30px;
+  }
+.toggleBar__btn:hover *:before,
+.toggleBar__btn:hover *:after {
+	width: 100%;
+}
+.toggleBar__btnOpen .toggleBar__btnicon{
+	background-color: transparent;
+}
+.toggleBar__btnOpen .toggleBar__btnicon:before,
+.toggleBar__btnOpen .toggleBar__btnicon:after {
+	width: 36px;
+	top: 0;
+  }
+.toggleBar__btnOpen .toggleBar__btnicon:before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.toggleBar__btnOpen .toggleBar__btnicon:after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+@media (max-width: 767.98px) {
+	.toggleBar__btnOpen .toggleBar__btnicon:before,
+	.toggleBar__btnOpen .toggleBar__btnicon:after {
+	  width: 25px;
+	}
+}
+@media (min-width: 1101px){
+	.toggleBar__btn{
+		width: 100px;
+		min-width: 100px;
+		height: 100px;
+	}
+}
+@media (max-width: 1100px){
+	.toggleBar__btn{
+		width: 70px;
+		min-width: 70px;
+		height: 70px;
+	}
+}
+@screen md-max {
+	.toggleBar__dropdown{
+		padding-bottom: 100px;
+	}
+	.toggleBar__dropdown{
+		max-width: calc(100vw - 59px);
+	}
+	.toggleBar__btn{
+		width: 59px;
+		min-width: 59px;
+		height: 59px;
+	}
+	.toggleBar__btnicon{
+		width: 23px;
+	}
+	.toggleBar__btnicon:before {
+		top: -7px;
+		width: 15px;
+	}
+	.toggleBar__btnicon:after {
+		top: 7px;
+		width: 19px;
+	}
+}

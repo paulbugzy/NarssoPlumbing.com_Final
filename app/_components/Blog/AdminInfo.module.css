@@ -1,0 +1,18 @@
+/*
+    Personal
+*/
+@screen lg {
+    .personal{
+        padding: 40px;
+    }
+}
+@screen lg-max {
+    .personal{
+        padding: 20px;
+    }
+}
+.personal__img{
+    max-width:130px;
+    min-width:130px;
+    width:130px;
+}

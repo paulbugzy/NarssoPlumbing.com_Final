@@ -1,0 +1,18 @@
+@screen 690-max{
+	.step{		
+		margin-bottom: -6px;
+	}
+}
+@screen lg{
+	.step__title{
+		margin-top: 35px;
+		padding-bottom: 0;
+	}
+}
+@screen lg-max{
+	.step__title{
+		margin-top: 17px;
+		padding-bottom: 0;
+	}
+}
+

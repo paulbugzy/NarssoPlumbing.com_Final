@@ -1,0 +1,19 @@
+.signature__indent{
+	@apply lg:mt-[30px] lg-max:mt-[21px];
+}
+.col__content{
+	@apply sm-max:mt-[37px];
+}
+.custom__width{
+	max-width: 430px;
+}
+/*
+	Image Align
+*/
+.col__content p{
+	margin-top: 16px;
+}
+.img__small{
+	max-width: 284px;
+	@apply xl:mt-[-21.5%] xl:left-[-7.3%] xl-max:mt-[-21.5%] xl-max:max-w-[55%] xl-max:left-[-15px] sm-max:mt-[-35%];
+}

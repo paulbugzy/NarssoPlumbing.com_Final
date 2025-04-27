@@ -1,0 +1,58 @@
+.backToTop {
+	bottom: -90px;
+	right: 15px;
+	z-index: 10;
+	font-size: 90px;
+	color: var(--base-color2);
+	transition: all 0.2s linear;
+	caret-color: transparent;
+}
+.disable__scroll .backToTop{
+	opacity: 0;
+}
+.backToTop:hover {
+	color: var(--base-color);
+}
+.backToTop:hover:after {
+	margin-top: -3px;
+}
+.backToTop:before {
+	text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+	pointer-events: none;
+}
+.backToTop:after {
+	content: "\e92c";
+	display: block;
+	font-size: 20px;
+	line-height: 1;
+	color: #ffffff;
+	z-index: 0;
+	position: absolute;
+	top: calc(50% + 8px);
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotate(-90deg);
+	transform: translate(-50%, -50%) rotate(-90deg);
+	pointer-events: none;
+	transition: margin-top 0.2s linear;
+}
+
+@media (max-width: 1024.98px) {
+	.backToTop {
+		font-size: 80px;
+	}
+	.backToTop:after {
+		font-size: 18px;
+	}
+	.backToTop:before {
+		text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.08);
+	}
+}
+@media (max-width: 575.98px) {
+	.backToTop {
+		font-size: 70px;
+		right: 7px;
+	}
+	.backToTop:after {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,18 @@
+.signature__img{
+	@apply lg-max:max-w-[190px];
+}
+.signature__title{
+	padding-left: 22px;
+	font-size: 13px;
+  	line-height: 1.2;
+}
+.signature__title:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 2px;
+	height: calc(100% - 20px);
+	background-color: var(--base-color2);
+}

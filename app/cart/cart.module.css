@@ -1,0 +1,65 @@
+.cart__message{
+    margin-top: 37px;
+}
+/*
+    Table Row
+*/
+.table__row{
+    border-bottom:1px solid #f3f3f3;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+}
+.table__img + .table__info{
+    margin-left: 20px;
+}
+/*
+    Table Col
+*/
+.table__img{
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+}
+.table__product ~ *{
+    margin-left: 50px;
+}
+.table__price{
+    min-width: 50px;
+    margin-right: 15px;
+}
+.table__total{
+    min-width: 69px;
+}
+.table__remove{
+    padding: 10px 0 10px 10px;
+    margin-left: 24px;
+}
+.table__wrapper > *{
+    margin-left: 20px;
+    @apply md-max:mt-[5px];
+}
+@media (hover: hover) {
+    .table__remove,
+    .table__info{
+        transition: color 0.2s ease;
+    }
+    .table__remove:hover,
+    .table__info:hover{
+        color: var(--base-color);
+    }
+}
+/* Cart Total Info */
+.cart__subtotal{
+    padding-top: 25px;
+}
+.cart__subtotal_Title{
+	font-family: var(--base-font2);
+	font-weight: 800;
+    padding-right: 20px;
+}
+.cart__subtotal_Value{
+	font-family: var(--base-font2);
+	font-weight: 800;
+	font-size: 20px;
+}

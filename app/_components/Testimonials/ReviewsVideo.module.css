@@ -1,0 +1,36 @@
+/*
+    Thumbs Img
+*/
+.video__icon{
+    transition: background-color .2s linear;
+    background-color: rgba(102,102,102,.6);
+    color: red;
+}
+.video__icon:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7px;
+    height: 7px;
+    background-color: #ffffff;
+    z-index: 0;
+}
+@screen sm{
+    .video__icon{
+        font-size: 30px;
+    }
+    .carusel__thumbs{
+        margin-top: 20px;
+    }
+}
+@screen sm-max {
+    .video__icon{
+        font-size: 25px;
+    }
+    .carusel__thumbs{
+        margin-top: 15px;
+    }
+}

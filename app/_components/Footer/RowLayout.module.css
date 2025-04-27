@@ -1,0 +1,9 @@
+.rowLayout{
+	@apply lg:mt-[50px] lg-max:mt-[30px];
+}
+.rowLayout p{
+	@apply mx-auto max-w-[500px] lg:mt-[21px] lg-max:mt-[22px];
+}
+.fLogo{
+	@apply lg-max:max-w-[102px] 690-max:max-w-[88px]
+}

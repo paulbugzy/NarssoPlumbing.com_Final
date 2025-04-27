@@ -1,0 +1,29 @@
+@screen md{
+    .holder__colleft{
+        width: calc(100% - 370px);
+        flex: 2 1 auto;
+    }
+}
+@screen lg{
+    .holder__colleft{
+        margin-right: 36px;
+    }
+    .holder__colright{
+        min-width: 334px;
+        max-width: 334px;
+    }
+}
+@screen only-lg{
+    .holder__colleft{
+        margin-right: 30px;
+    }
+    .holder__colright{
+        min-width: 280px;
+        max-width: 280px;
+    }
+}
+@screen md-max {
+    .holder__colright{
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,135 @@
+/*
+    Cart Sidebar Button
+*/
+.cartSidebar__toggleBtn{
+    right: 15px;
+    background-color: #ffffff;
+    color: var( --base-color);
+    border: 2px solid var( --base-color);
+    transition: background-color 0.2s linear;
+}
+.cartSidebar__toggleBtn svg{
+    transition: fill 0.2s linear;
+}
+.cartSidebar__toggleBtn:hover{
+    background-color: var( --base-color);
+    color: #ffffff;
+}
+.cartSidebar__toggleBtn:hover .cartSidebar__btnValue{
+    color: #ffffff;
+}
+.cartSidebar__btnValue{
+    top: -2px;
+    right: 4px;
+    font-size: 22px;
+    color: var( --base-color);
+    transition: color 0.2s linear;
+}
+@screen sm{
+    .cartSidebar__toggleBtn{
+        width: 70px;
+        height: 70px;
+        padding: 15px;
+    }
+}
+@screen xl{
+    .cartSidebar__toggleBtn{
+        top: 274px;
+    }
+}
+@screen only-xl{
+    .cartSidebar__toggleBtn{
+        top: 274px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1100px){
+    @screen only-xl{
+        .cartSidebar__toggleBtn{
+            top: 216px;
+        }
+    }
+}
+@screen only-lg{
+    .cartSidebar__toggleBtn{
+        top: 192px;
+    }
+}
+@screen only-md{
+    .cartSidebar__toggleBtn{
+        top: 114px;
+    }
+}
+@screen sm-max{
+    .cartSidebar__btnValue{
+        font-size: 16px;
+        right: 2px;
+        top: -4px;
+    }
+    .cartSidebar__toggleBtn{
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+    .cartSidebar__toggleBtn{
+        top: 120px;
+    }
+}
+/* Cart Sidebar Layout */
+.popupLayout{
+    height: 100svh;
+    min-height: 100%;
+	background-color: #ffffff;
+	position: fixed;
+	z-index: 22;
+	opacity: 0;
+	transition: transform 0.35s ease-in-out;
+    -webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	top: 0;
+	right: 0;
+	padding: 45px 20px 45px;
+    min-width: 320px;
+	width: 320px;
+}
+.popupLayout__open{
+    visibility: visible;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+	opacity: 1;
+}
+/* Cart Sidebar Dropdown Background */
+.dropdownBg{
+    background-color: rgba(var(--base-color2-rgba), 0.5);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    display: block;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.dropdownBg_open{
+	opacity: 1;
+    pointer-events: auto;
+    z-index: 21;
+    visibility: visible;
+    transition: opacity .4s linear;
+}
+
+/* Close */
+.toggleBar__close{
+	width: 60px;
+	height: 55px;
+	background-color: var(--base-color2);
+	color: #ffffff;
+    font-size: 20px;
+}
+.toggleBar__close > * {
+	pointer-events: none;
+}

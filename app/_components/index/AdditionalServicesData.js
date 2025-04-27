@@ -1,0 +1,67 @@
+export const dataServices = [
+	{
+		id: 1,
+		icon: `icon-1889287`,
+		title: `Drain Cleaning`,
+		text: `Our professionals are available 24/7 to perform routine drain maintenance`,
+		list: [
+			'Years of mineral built up',
+			'Root infested pipes',
+			'Foreign objects',
+		],
+		btn__text: 'Know more',
+		btn__src: '/services/services__residential',
+	},
+	{
+		id: 2,
+		icon: `icon-2424820`,
+		title: `Sewer Line Cleaning`,
+		text: `Our technicians are the leading sewer cleaning experts in the industry`,
+		list: [
+			'Multiple drains are backed up',
+			'Sewage collects in the floor drain',
+			'Drains are slow',
+		],
+		btn__text: 'Know more',
+		btn__src: '/services/services__commercial',
+	},
+	{
+		id: 3,
+		icon: `icon-1677058`,
+		title: `Water Heater Repair`,
+		text: `We can provide regular maintenance, repairs, and replacements`,
+		list: [
+			'Diminished Water Quality',
+			'Noisy or Loud Water Heater',
+			'Visible Leak',
+		],
+		btn__text: 'Know more',
+		btn__src: '/services/services__emergency',
+	},
+	{
+		id: 4,
+		icon: `icon-900667`,
+		title: `Leak Detection`,
+		text: `Water leaks can cause both property damage as well as a financial burden.`,
+		list: [
+			'Visible Water Spots Surfacing',
+			'Water Bill is Abnormally High',
+			'Damp Carpet',
+		],
+		btn__text: 'Know more',
+		btn__src: '/services/services__residential',
+	},
+	{
+		id: 5,
+		icon: `icon-2321403`,
+		title: `Hot Water System`,
+		text: `Hot water system services are made up of several components.`,
+		list: [
+			'Electric Hot Water Systems',
+			'Instant Hot Water Systems',
+			'Gas Hot Water Systems',
+		],
+		btn__text: 'Know more',
+		btn__src: '/services/services__commercial',
+	},
+];

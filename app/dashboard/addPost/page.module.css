@@ -1,0 +1,6 @@
+.details summary + *{
+	padding: 5px 0 0 0;
+}
+.details + button{
+	margin-top: 7px;
+}

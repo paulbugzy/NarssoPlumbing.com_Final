@@ -1,0 +1,115 @@
+.pageTitle__wrapper{
+	background: linear-gradient(#e9ecef, #ffffff);
+}
+@media (min-width: 1101px){
+	.pageTitle__wrapper{
+		padding: 40px;
+	}
+}
+@media (max-width: 1101px) and (min-width: 768px){
+	.pageTitle__wrapper{
+		padding: 25px;
+	}
+}
+@media (max-width: 767px){
+	.pageTitle__wrapper{
+		padding: 15px;
+	}
+}
+@screen sm-max {
+	.pageTitle__wrapper{
+		padding: 10px 0 0px 0;
+	}
+}
+.pageTitle__wrapper:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -15.66%;
+	width: 67.3%;
+	height: 100%;
+	background-color: var(--base-color2);
+	z-index: 0;
+	-webkit-transform: skew(-26deg);
+	transform: skew(-26deg);
+}
+@media (max-width: 1313px){
+	.container__custom{
+		padding-left: 35px;
+		padding-right: 35px;
+		max-width: inherit;
+	}
+}
+@screen sm-max {
+	.container__custom{
+		padding:10px 20px;
+	}
+}
+.pageTitle__box{
+	@apply lg:min-h-[229px] lg-max:min-h-[180px] md-max:min-h-[130px];
+}
+.pageTitle__title{
+	color: #ffffff;
+	font-weight: 800;
+	font-family: var(--base-font2);
+	@apply lg:text-[42px] lg:leading-[55px] lg-max:text-[32px] lg-max:leading-[45px] md-max:text-[29px] md-max:leading-[36px];
+}
+.pageTitle__title + * {
+    @apply lg:mt-[21px] lg-max:mt-[15px] md-max:mt-[10px];
+}
+/*
+	Breadcrumbs
+*/
+.breadCrumbs{
+	padding-bottom: 3px;
+}
+.breadCrumbs li{
+	position: relative;
+	color: #ffffff;
+}
+.breadCrumbs li a{
+	color: currentColor;
+	display: inline-block;
+	position: relative;
+}
+.breadCrumbs li a:before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 2px;
+	width: 0%;
+	height: 1px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	transition: width 0.2s linear;
+	background-color: currentColor;
+  }
+  .breadCrumbs li a:hover:before{
+	width: 100%;
+  }
+  .breadCrumbs li:not(:first-child):before{
+	content: "/";
+	display: inline-block;
+  }
+  @screen md {
+	.breadCrumbs li:not(:first-child):before{
+		margin-left: 17px;
+		margin-right: 17px;
+	}
+	.breadCrumbs li a{
+		font-size: 16px;
+	}
+  }
+  @screen md-max {
+	.breadCrumbs li:not(:first-child):before{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.breadCrumbs li,
+	.breadCrumbs li a {
+	  font-size: 14px;
+	  line-height: 22px;
+	}
+  }

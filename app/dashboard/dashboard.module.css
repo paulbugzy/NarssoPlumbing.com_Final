@@ -1,0 +1,17 @@
+.layout__col_left ul li{
+	min-width: 240px;
+    @apply lg:max-w-[240px];
+}
+.layout__col_content{
+    flex: 1 1 auto;
+}
+.layout__btn_custom{
+    margin-top:15px;
+    gap: 7px;
+}
+@media (hover: hover) {
+    .layout__btn_custom{}
+    .layout__btn_custom:hover{
+        color: var(--base-color2);
+    }
+}

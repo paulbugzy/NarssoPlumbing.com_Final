@@ -1,0 +1,69 @@
+/*
+	Icon
+*/
+.boxicon__icon:before{
+	position: relative;
+	top: -13px;
+	left: 7px;
+	font-size: 75px;
+	line-height: 1;
+	color: var(--base-bg);
+}
+.boxicon__icon > *{
+	font-size: 55px;
+	color: var(--base-color2);
+	top: -2px;
+	left: 6px;
+}
+/*
+	Title
+*/
+.boxicon__title {
+	font-size: 20px;
+	line-height: 26px;
+	font-family: var(--base-font2);
+	color: var(--base-color-dark);
+	font-weight: 800;
+	padding: 0 0 12px 0;
+	@apply lg-max:text-[17px] lg-max:pb-[7px];
+}
+.boxicon__title a {
+	display: inline-block;
+	position: relative;
+	color: var(--base-color);
+}
+.boxicon__title a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	width: 0%;
+	height: 2px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	background-color: currentColor;
+	transition: width 0.2s linear;
+
+}
+.boxicon__title a:hover:before {
+	width: 100%;
+}
+@screen lg-max {
+	.boxicon__title {
+		font-size: 17px;
+		padding: 0 0 7px 0;
+	}
+	.boxicon__icon:before {
+		font-size: 64px;
+	}
+	.boxicon__icon > * {
+		font-size: 40px;
+	}
+}
+/*
+	Content
+*/
+.boxicon__icon + .boxicon__cont{
+    margin-left: 11px;
+}

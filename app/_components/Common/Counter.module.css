@@ -1,0 +1,24 @@
+/*
+    Holder
+*/
+.counter__holder{
+    min-width: 98px;
+    max-width: 98px;
+    border: 2px solid var(--base-bg);
+    padding: 4px 0;
+}
+/*
+    Btn
+*/
+.counter__holder button{
+    width: 33px;
+    height: 100%;
+    font-size: 21px;
+    line-height: 1;    
+}
+.counter__minus{
+    left: 0;
+}
+.counter__plus{
+    right: 0;
+}

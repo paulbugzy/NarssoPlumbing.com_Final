@@ -1,0 +1,47 @@
+@screen md {
+    .tabs__container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+@screen md-max {
+    .tabs__container{
+        padding:40px 20px;
+    }
+    .tabs__custom:before{
+        top: 0px;
+    }
+}
+.tabs__custom{
+    @apply only-md:px-[30px] only-lg:px-[30px] lg:px-[50px]
+}
+.tabs__nav_item{
+    max-width: inherit !important;
+    white-space:nowrap;
+}
+/*
+    Table
+*/
+.propd__table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.propd__table td {
+    padding-top: 12px;
+    padding-bottom: 11px;
+}
+.propd__table td:first-child {
+    padding-left: 17px;
+    padding-right: 10px;
+    @apply sm-max:w-[150px] sm:w-[267px];
+}
+.propd__table td:last-child {
+    color: var(--base-color);
+    font-weight: 700;
+    padding-right: 10px;
+}
+/*
+    Form Custom
+*/
+.form__control{
+    background-color: #ffffff;
+}

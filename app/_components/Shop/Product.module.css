@@ -1,0 +1,88 @@
+/*
+    Thumbprod Label
+*/
+.thumbprod__label{
+    top: 7px;
+    left: 8px;
+    background-color: var(--base-color3);
+    color: #ffffff;
+}
+@screen xl {
+    .thumbprod__label{
+        font-size: 16px;
+        height: 39px;
+        padding: 2px 19px 2px;
+    }
+}
+@screen xl-max {
+    .thumbprod__label{
+        font-size: 14px;
+        height: 30px;
+        padding: 2px 10px 2px;
+    }
+}
+.thumbprod__cont{
+    margin-top: 18px;
+}
+/*
+    Thumbprod Title
+*/
+.thumbprod__title{
+    margin-top: 18px;
+    color: #797d82;
+}
+.thumbprod__title a {
+    color: currentColor;
+    display: inline-block;
+    transition: color 0.3s;
+}
+.thumbprod__title a:hover {
+    color: var(--base-color);
+}
+/*
+    Thumbprod Add To Cart
+*/
+@media (hover: hover) {
+    .thumbprod .thumbprod__addtocart{
+        top: 53%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .thumbprod:hover .thumbprod__addtocart{
+        opacity: 1;
+    }
+}
+/*
+    Thumbprod Price
+*/
+.thumbprod__rating{
+    margin-top: 14px;
+}
+/*
+    Thumbprod Price
+*/
+.price {
+    font-family:var(--base-font2);
+    color: var(--base-color);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 18px;
+}
+/*
+    Thumbprod Price Type 1
+*/
+.price > * {
+    display: inline-block;
+    font-size: 20px;
+    color: var(--base-color);
+}
+/*
+    Thumbprod Price Type 2
+*/
+.price__old{
+    text-decoration: line-through;
+}
+.price__new{
+    color: var(--base-color3);
+}

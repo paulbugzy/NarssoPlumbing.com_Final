@@ -1,0 +1,123 @@
+.swiper__layout{
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 48px
+}
+.promo{
+    background-color: #ffffff;
+    box-shadow: 0px 9px 27px rgba(26, 54, 85, 0.05);
+    max-width: 450px;
+    height: 100%;
+}
+.promo__icon{
+    width: 107px;
+    color: #ffffff;
+    top: -32px;
+    margin-bottom: -9px;
+}
+.promo__icon:before{
+    line-height: 1;
+    z-index: 1;
+    margin-top: 10px;
+}
+.promo__icon i{
+    color: var(--base-color2);
+    text-shadow: 5px 5px 10px rgba(81, 172, 251, 0.5);
+}
+.promo__list{
+    max-width: 292px;
+}
+.promo__list li{
+    padding: 4px 0 3px 26px;
+}
+.promo__list li:before{
+    content: "\e92c";
+    font-family: var(--font-icons);
+    color: var(--base-color);
+    display: inline-block;
+    font-size: 13px;
+    position: absolute;
+    left: 0;
+    font-weight: normal;
+}
+.promo__list li:first-child {
+    padding-top: 0;
+}
+.promo__price__text01 {
+    line-height: 1;
+    font-weight: 800;
+    font-family: var(--base-font2);
+    color: var(--base-color2);
+}
+.promo__price__text02{
+    font-weight: 800;
+    font-family: var(--base-font2);
+    color: var(--base-color);
+    margin-top: 2px;
+    letter-spacing: 0.09em;
+}
+@screen lg{
+    .promo{
+        padding: 0 40px 50px;
+    }
+    .promo__icon i{
+        font-size: 107px;
+    }
+    .promo__icon:before{
+        font-size: 37px;
+    }
+    .promo__price__text01{
+        font-size: 42px;
+    }
+    .promo__price {
+        margin-top: 28px;
+    }
+}
+@screen only-lg{
+    .promo{
+        padding: 0 20px 40px;
+    }
+    .promo__icon:before{
+        font-size: 33px;
+    }
+    .promo__icon i{
+        font-size: 90px;
+    }
+    .promo__price__text01{
+        font-size: 30px;
+    }
+    .promo__price{
+        margin-top: 20px;
+    }
+    .promo .btn{
+      margin-top: 20px;
+    }
+}
+@screen md-max {
+    .promo{
+        padding: 0 25px 40px;
+    }
+    .promo__icon:before{
+        font-size: 27px;
+    }
+    .promo__icon i{
+        font-size: 80px;
+    }
+    .promo__list li{
+        padding: 2px 0 1px 26px;
+    }
+    .promo__price__text01{
+        font-size: 27px;
+    }
+    .promo__price{
+        margin-top: 15px;
+    }
+    .promo .btn {
+        margin-top: 15px;
+    }
+}
+@screen sm{
+    .promo__title{
+        white-space: pre-line;
+    }
+}

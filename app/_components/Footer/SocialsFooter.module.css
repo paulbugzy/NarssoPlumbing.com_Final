@@ -1,0 +1,20 @@
+.fsocial ul{
+    margin-left: -9px;
+    margin-right: -9px;
+    margin-top: 26px;
+}
+.fsocial li a{
+    font-size: 13px;
+    line-height: 26px;
+    padding: 9px 12px;
+    color: #ffffff;
+    transition: color 0.2s linear;
+}
+.fsocial li a:hover{
+    color: #a9d7ff;
+}
+@media (max-width: 690px){
+    .fsocial ul{
+        margin-top: 21px;
+    }
+}

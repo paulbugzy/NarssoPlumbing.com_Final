@@ -1,0 +1,3 @@
+.tabs__container2{
+    @apply lg:pt-[46px] lg-max:pt-[38px] md-max:pt-[42px];
+}

@@ -1,0 +1,53 @@
+@screen only-lg{
+    .textIndent{
+        max-width: calc(100% - 59px);
+        padding-bottom: 26px;
+    }
+}
+@screen md-max{
+    .textIndent{
+        max-width: calc(100% - 20px);
+        padding-bottom: 26px;
+    }
+}
+@screen md{
+    input.input__input{
+        padding-left: 50px;
+    }
+}
+@screen md-max{
+    input.input__input{
+        padding-left: 43px;
+    }
+    .textIndent{
+        padding-bottom: 16px;
+    }
+}
+.input__icon{
+    position: absolute;
+    z-index: 2;
+    color: var(--base-color);
+    border: none;
+    outline: 0;
+    background-color: transparent;
+}
+@screen lg{
+    .input__icon{
+        left: 19px;
+        top: 17px;
+        width: 45px;
+        height: 52px;
+        font-size: 19px;
+    }
+    .textIndent{
+        padding-bottom: 26px;
+    }
+}
+@screen lg-max{
+    .input__icon{
+        height: 42px;
+        left: 18px;
+        top: 12px;
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,56 @@
+/*
+  Hover Animation Border
+*/
+.hover__border{
+	border-style: solid;
+	border-color: var( --base-border);
+	background-color: #ffffff;
+}
+.hover__border img{
+	display: inline-block;
+}
+.hover__border:before,
+.hover__border:after {
+  	content: "";
+	z-index: 3;
+	position: absolute;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	transition: 0.4s;
+	pointer-events: none;
+	border-style: solid;
+	border-color:var(--base-color);
+}
+.hover__border:before {
+	-webkit-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+}
+.hover__border:after {
+	-webkit-transform-origin: 100% 0%;
+	transform-origin: 100% 0%;
+}
+.hover__border:hover:before,
+.hover__border:hover:after {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+/* border width 2px */
+.hover__borderw2{
+	border-width: 2px;
+	padding: 2px;
+}
+.hover__borderw2:before,
+.hover__borderw2:after {
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	top: -2px;
+	left: -2px;
+}
+.hover__borderw2:before{
+  	border-bottom-width: 2px;
+	border-left-width: 2px;
+}
+.hover__borderw2:after{
+  border-top-width: 2px;
+  border-right-width: 2px;
+}

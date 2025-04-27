@@ -1,0 +1,29 @@
+@screen lg-max{
+    .filter__holder{
+        padding-bottom: 30px;
+    }
+}
+@screen lg{
+    .filter__holder{
+        padding-bottom: 50px;
+    }
+}
+@screen sm{
+    .form__select{
+        width: 287px;
+    }
+}
+@screen sm-max{
+    .form__select{
+        width: 100%;
+    }
+}
+/*
+    Filters Toggle
+*/
+.filters__toggle_icon{
+    font-size: 24px;    
+}
+.filters__toggle_text{
+    font-size: 16px;    
+}

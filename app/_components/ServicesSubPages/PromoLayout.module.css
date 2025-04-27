@@ -1,0 +1,41 @@
+.promo{
+	@apply lg:mt-[45px] only-lg:mt-[35px] md-max:mt-[25px];
+	background-color: var(--base-color);
+}
+.promo__content{
+	color: #ffffff;
+	font-weight: bold;
+}
+@screen sm {
+	.promo__content {
+		width: 59%;
+	}
+}
+.promo__img{
+	width: 43%;
+	height: 100%;
+	right: 0;
+	bottom: -32px;
+	@apply sm-max:hidden;
+}
+
+@screen xl{
+	.promo__content {
+		padding: 28px 0px 30px 41px;
+	}
+}
+@screen only-xl{
+	.promo__content {
+		padding: 28px 0px 30px 35px;
+	}
+}
+@screen only-lg{
+	.promo__content {
+		padding: 28px 0px 30px 25px;
+	}
+}
+@screen md-max{
+	.promo__content {
+		padding: 25px 20px;
+	}
+}

@@ -1,0 +1,79 @@
+.img img{
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    max-width: 100%;
+    object-fit: cover;
+}
+/*
+	Modal Btn Close
+*/
+.jsmodal__btn_holder{
+    right: 0;
+    @apply lg:top-[100px] lg-max:top-[70px] sm-max:top-[59px];
+}
+@screen lg{
+	.jsmodal__btn_holder{
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+}
+.jsmodal__btn{
+	cursor: pointer;
+	color: #ffffff;
+	background-color: var(--base-color2);
+}
+.jsmodal__btn > * {
+	pointer-events: none;
+}
+.jsmodal__btn svg {
+	font-size: 34px;
+    position: absolute;
+	transition: all 0.3s ease-in;
+}
+.swiperSlide{
+    width: 100% !important;
+}
+.jsmodal__btn label {
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+	color: #ffffff;
+	font-size: 20px;
+	opacity: 0;
+	font-family: var(--base-font2);
+	font-weight: 800;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+@screen lg{
+	.jsmodal__btn {
+		width: 100px;
+		height: 100px;
+	}
+	.jsmodal__btn:hover label {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+	.jsmodal__btn:hover svg {
+		opacity: 0;
+	}
+}
+@screen lg-max{
+	.jsmodal__btn {
+		width: 70px;
+		height: 70px;
+	}
+	.jsmodal__btn:before {
+		font-size: 25px;
+	}
+	.jsmodal__btn label {
+		display: none;
+	}
+}
+@screen sm-max{
+	.jsmodal__btn {
+		width: 59px;
+		height: 59px;
+	}
+}

@@ -1,0 +1,115 @@
+.section__custom_indent{
+    @apply lg:mt-[20px] lg:mb-[20px];
+}
+.holder__wrapper_img{
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.holder__bg{
+    @apply xl:pt-[100px] sm:pt-[54px] sm-max:pt-[20px];
+}
+.holder__bg:before,
+.holder__bg:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.holder__bg:before{
+    right: -15%;
+    width: 64.3%;
+    background-color: #ffffff;
+    z-index: 1;
+    -webkit-transform: skew(-26deg);
+    transform: skew(-26deg);
+    @apply lg-max:w-[78%] md-max:w-[89%];
+}
+.holder__bg:after{
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    max-height: 800px;
+    background-color: var(--base-color-dark);
+}
+.holder__bg_img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.holder2 {
+    background-color: #ffffff;
+    @apply xl:pt-[92px] xl:pl-[100px];
+    @apply md:pt-[92px] xl-max:px-[15px];
+    @apply only-md:pt-[71px];
+    @apply sm-max:pt-[41px] sm-max:px-[20px] sm-max:ml-[15px];
+
+}
+.holder__wrapper{
+    padding: 120px 0 0px;
+    @apply  lg-max:pt-[63px];
+}
+@screen xl {
+    .holder__wrapper{
+        min-height:1030px;
+    }
+    .holder2{
+        margin-left: 375px;
+    }
+}
+@screen md {
+    .holder__title_text{
+        max-width: 400px;
+        margin-top: 47px;
+    }
+}
+@screen md-max {
+    .holder__title_text{
+      padding-bottom: 25px;
+    }
+}
+/*
+    Item
+*/
+@media (max-width: 1400px){
+    .item__holder{
+        padding-left: 30px;
+    }
+}
+.item__holder{
+    background-color: var(--base-border);
+    padding: 45px 20px 45px 45px;
+    margin: 30px 0 0 0;
+    height: calc(100% - 30px);
+    @apply lg-max:px-[25px] lg-max:py-[30px];
+}
+.item__icon{
+    position: relative;
+    display: inline-block;
+    margin: -70px 0 28px -10px;
+    @apply lg-max:mb-[22px];
+}
+.item__icon:before{
+    color: var(--base-color2);
+    text-shadow: 0 5px 10px rgb(30 96 170 / 20%);
+    @apply lg:text-[107px] lg-max:text-[77px] sm-max:text-[74px];
+}
+.item__icon > *{
+    color: #ffffff;
+    margin-top: 10%;
+    line-height: 1;
+    @apply lg:text-[41px] lg-max:text-[31px] sm-max:text-[28px];
+}
+@screen lg {
+    .item__title{
+        padding-bottom: 21px;
+    }
+}
+.item__ul{
+    @apply mt-[21px];
+}
+.item__btn{
+    @apply mt-[18px];
+}
